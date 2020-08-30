@@ -1,0 +1,18 @@
+[main] INFO  com.pragra.pages.LoginPage  - Entered Client ID
+[main] INFO  com.pragra.pages.LoginPage  - Entered User Name
+[main] INFO  com.pragra.pages.LoginPage  - Entered Password
+[main] INFO  com.pragra.pages.LoginPage  - Clicked SignIn Button
+[main] INFO  com.pragra.pages.DashboardPage  - Dashboard Page Displayed
+[main] INFO  com.pragra.pages.DashboardPage  - Clicked on File
+[main] INFO  com.pragra.pages.DashboardPage  - Clicked on File_New
+[main] INFO  com.pragra.pages.DashboardPage  - Entered Dashboard Name
+[main] INFO  com.pragra.pages.DashboardPage  - Saved Dashboard
+[main] INFO  com.pragra.pages.DashboardPage  - Verified the newly created dashboard
+[main] INFO  com.pragra.pages.LoginPage  - Entered Client ID
+[main] INFO  com.pragra.pages.LoginPage  - Entered User Name
+[main] INFO  com.pragra.pages.LoginPage  - Entered Password
+[main] INFO  com.pragra.pages.LoginPage  - Clicked SignIn Button
+[main] INFO  com.pragra.pages.CMICConsolePage  - CMIC Landing Page Displayed
+[main] INFO  com.pragra.pages.CMICConsolePage  - Clicked on CMIC Enterprise
+[main] INFO  com.pragra.pages.CMICConsolePage  - Switched toUIConsole - Financials Console tab
+[main] INFO  com.pragra.pages.CMICConsolePage  - Navigated to Job Setup Window

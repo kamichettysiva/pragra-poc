@@ -101,7 +101,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>airasia-docker</finalName>
+        <finalName>pragra-docker</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -149,7 +149,6 @@
                     </execution>
                 </executions>
             </plugin>
-
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>dockerfile-maven-plugin</artifactId>
@@ -168,6 +167,7 @@
                     <tag>1.0</tag>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
     <distributionManagement>

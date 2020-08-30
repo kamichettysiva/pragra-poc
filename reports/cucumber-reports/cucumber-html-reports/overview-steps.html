@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                  <li role="presentation" ><a href="overview-trends.html">Trends</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>CMIC</td>
+              <td>1</td>
+            <td>31 Aug 2020, 01:58</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">CMICConsoleStepDefinitions.clickBankAndInsertBankDepartmentAndBankAccount(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1800">0.000</td>
+              <td class="duration" data-value="1800">0.000</td>
+              <td class="duration" data-value="1800">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CMICConsoleStepDefinitions.clickInsertInJobDetailWindow()</td>
+              <td>1</td>
+              <td class="duration" data-value="3582590300">3.582</td>
+              <td class="duration" data-value="3582590300">3.582</td>
+              <td class="duration" data-value="3582590300">3.582</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CMICConsoleStepDefinitions.clickJobBillingAndSelectJobMapCode(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1700">0.000</td>
+              <td class="duration" data-value="1700">0.000</td>
+              <td class="duration" data-value="1700">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CMICConsoleStepDefinitions.clickJobDetailsAndSaveJob()</td>
+              <td>1</td>
+              <td class="duration" data-value="1700">0.000</td>
+              <td class="duration" data-value="1700">0.000</td>
+              <td class="duration" data-value="1700">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CMICConsoleStepDefinitions.clickOnCMICENTERPRISE()</td>
+              <td>1</td>
+              <td class="duration" data-value="101985600">0.101</td>
+              <td class="duration" data-value="101985600">0.101</td>
+              <td class="duration" data-value="101985600">0.101</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CMICConsoleStepDefinitions.clickSecurityAndInsertGroupCode(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1600">0.000</td>
+              <td class="duration" data-value="1600">0.000</td>
+              <td class="duration" data-value="1600">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CMICConsoleStepDefinitions.enterJobCodeAnd(String,String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="6900">0.000</td>
+              <td class="duration" data-value="6900">0.000</td>
+              <td class="duration" data-value="6900">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CMICConsoleStepDefinitions.navigateToJobCostingJobEnterJob()</td>
+              <td>1</td>
+              <td class="duration" data-value="9699185700">9.699</td>
+              <td class="duration" data-value="9699185700">9.699</td>
+              <td class="duration" data-value="9699185700">9.699</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CMICConsoleStepDefinitions.searchJobAndVerifyRowIsReturned(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1500">0.000</td>
+              <td class="duration" data-value="1500">0.000</td>
+              <td class="duration" data-value="1500">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CMICConsoleStepDefinitions.selectCustomer(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1900">0.000</td>
+              <td class="duration" data-value="1900">0.000</td>
+              <td class="duration" data-value="1900">0.000</td>
+              <td class="failed">0.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CMICConsoleStepDefinitions.verifyCMICLandingPageLoadedSuccefully()</td>
+              <td>1</td>
+              <td class="duration" data-value="58326600">0.058</td>
+              <td class="duration" data-value="58326600">0.058</td>
+              <td class="duration" data-value="58326600">0.058</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">CMICConsoleStepDefinitions.verifyCMICMainConsoleIsLaunched()</td>
+              <td>1</td>
+              <td class="duration" data-value="34339924900">34.339</td>
+              <td class="duration" data-value="34339924900">34.339</td>
+              <td class="duration" data-value="34339924900">34.339</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DashboardStepDefinitions.dragTheSelectedToColumns(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="10765961800">10.765</td>
+              <td class="duration" data-value="10765961800">10.765</td>
+              <td class="duration" data-value="10765961800">10.765</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DashboardStepDefinitions.enterDashboardNameAndSelect(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="8570853600">8.570</td>
+              <td class="duration" data-value="8570853600">8.570</td>
+              <td class="duration" data-value="8570853600">8.570</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DashboardStepDefinitions.navigateToFileNew()</td>
+              <td>1</td>
+              <td class="duration" data-value="4520793500">4.520</td>
+              <td class="duration" data-value="4520793500">4.520</td>
+              <td class="duration" data-value="4520793500">4.520</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DashboardStepDefinitions.saveTheDashboardWith(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="7517283200">7.517</td>
+              <td class="duration" data-value="7517283200">7.517</td>
+              <td class="duration" data-value="7517283200">7.517</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DashboardStepDefinitions.selectBusinessAreaAndFields(String,String)</td>
+              <td>1</td>
+              <td class="duration" data-value="16028720600">16.028</td>
+              <td class="duration" data-value="16028720600">16.028</td>
+              <td class="duration" data-value="16028720600">16.028</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DashboardStepDefinitions.selectVisualizationType(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="84938200">0.084</td>
+              <td class="duration" data-value="84938200">0.084</td>
+              <td class="duration" data-value="84938200">0.084</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DashboardStepDefinitions.verifyDashboardByOpening(String)</td>
+              <td>1</td>
+              <td class="duration" data-value="9595057200">9.595</td>
+              <td class="duration" data-value="9595057200">9.595</td>
+              <td class="duration" data-value="9595057200">9.595</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DashboardStepDefinitions.verifyDashboardPageIsLaunched()</td>
+              <td>1</td>
+              <td class="duration" data-value="5831208900">5.831</td>
+              <td class="duration" data-value="5831208900">5.831</td>
+              <td class="duration" data-value="5831208900">5.831</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">DashboardStepDefinitions.verifyNewDashboardBuilderPageIsLaunched()</td>
+              <td>1</td>
+              <td class="duration" data-value="1986866100">1.986</td>
+              <td class="duration" data-value="1986866100">1.986</td>
+              <td class="duration" data-value="1986866100">1.986</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.afterScenario()</td>
+              <td>2</td>
+              <td class="duration" data-value="691721700">0.691</td>
+              <td class="duration" data-value="691721700">0.697</td>
+              <td class="duration" data-value="1383443400">1.383</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.beforeScenario(Scenario)</td>
+              <td>2</td>
+              <td class="duration" data-value="10561128900">10.561</td>
+              <td class="duration" data-value="10561128900">10.896</td>
+              <td class="duration" data-value="21122257800">21.122</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStepDefinitions.signInWith(String,String,String)</td>
+              <td>2</td>
+              <td class="duration" data-value="6457163600">6.457</td>
+              <td class="duration" data-value="6457163600">7.351</td>
+              <td class="duration" data-value="12914327200">12.914</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">LoginStepDefinitions.userIsOnLoginPage()</td>
+              <td>2</td>
+              <td class="duration" data-value="5611550">0.005</td>
+              <td class="duration" data-value="5611550">0.010</td>
+              <td class="duration" data-value="11223100">0.011</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>25</td>
+            <td>29</td>
+            <td class="duration">5.107</td>
+            <td class="duration">34.339</td>
+            <td class="duration">2:28.114</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

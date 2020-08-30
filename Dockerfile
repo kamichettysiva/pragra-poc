@@ -3,7 +3,7 @@ WORKDIR /usr/share/tag
 ADD  target/libs libs
 ADD  target/pragra-docker.jar pragra-docker.jar
 ADD  target/pragra-docker-tests.jar pragra-docker-tests.jar
-ADD  src/main/java/com/pragra src/main/java/com/pragra/config
+ADD  src/main/java/com/pragra/config src/main/java/com/pragra/config
 ADD  src/test/resources/features src/test/resources/features
 ADD  pragra-sample-tests.xml pragra-sample-tests.xml
 ADD  target/test-classes target/test-classes

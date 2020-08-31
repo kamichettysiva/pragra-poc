@@ -32,8 +32,8 @@ public class DriverManager{
 	 */
 	public void launchApplication(String URL) throws MalformedURLException {
 
-		//browser = System.getProperty("BROWSER");
-		browser = "localchrome";
+		browser = System.getProperty("BROWSER");
+		//browser = "localchrome";
 		host = System.getProperty("HUB_HOST");
 		driver.set(getDriverFor(browser));
 		getDriver().manage().window().maximize();

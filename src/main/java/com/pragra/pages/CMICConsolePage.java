@@ -44,7 +44,7 @@ public class CMICConsolePage extends BasePage {
 	@FindBy(xpath="///h1[text()='Job Detail']")
 	private WebElement jobSetUpWindow;
 
-	@FindBy(xpath="//span[text()='Insert']/..")
+	@FindBy(xpath="//div[@title='Insert Record']")
 	private WebElement insertButton;
 
 	@FindBy(xpath="//label[text()='Job Code']/../input")
@@ -122,7 +122,7 @@ public class CMICConsolePage extends BasePage {
 	@FindBy(xpath="//div[@role='presentation']/a[text()='Job Detail']")
 	private WebElement jobDetailMenu;
 
-	@FindBy(xpath="//span[text()='Save']")
+	@FindBy(xpath="//div[@title='Save (Ctrl+S)']")
 	private WebElement saveButton;
 
 	@FindBy(xpath="//span[text()='Search']/..")
@@ -180,7 +180,7 @@ public class CMICConsolePage extends BasePage {
 		DriverWait.isElementDisplayed(insertButton, WaitTime.ONEMINUTE);
 		DriverWait.isElementEnabled(insertButton, WaitTime.ONEMINUTE);
 		Thread.sleep(2000);
-		staleElementClick(insertButton);
+		insertButton.click();
 		DriverWait.isElementEnabled(jobCode, WaitTime.ONEMINUTE);
 		logger.info("New Job Setup Window is launched");
 	}
@@ -227,7 +227,7 @@ public class CMICConsolePage extends BasePage {
 		Thread.sleep(2000);
 		bankMenu.click();
 		Thread.sleep(3000);
-		staleElementClick(insertButton);
+		insertButton.click();
 		DriverWait.isElementEnabled(bankDepartmenttxt, WaitTime.ONEMINUTE);
 		inputText(bankDepartmenttxt, bankdept, "Bank Department" );
 		inputText(bankAccounttxt, bankact, "Bank Account" );
@@ -239,7 +239,7 @@ public class CMICConsolePage extends BasePage {
 		Thread.sleep(2000);
 		securityMenu.click();
 		Thread.sleep(3000);
-		staleElementClick(insertButton);
+		insertButton.click();
 		DriverWait.isElementEnabled(groupCodeSearchBtn, WaitTime.ONEMINUTE);
 		groupCodeSearchBtn.click();
 		DriverWait.isElementEnabled(groupListPopup, WaitTime.ONEMINUTE);
@@ -273,10 +273,22 @@ public class CMICConsolePage extends BasePage {
 	}
 
 
-	public void staleElementClick(WebElement element) throws InterruptedException {
-		try {element.click();} catch (org.openqa.selenium.StaleElementReferenceException ex) {
+	public void staleElementClick(By locator) throws InterruptedException {
+
+		boolean staleElement = true;
+		while(staleElement){
+			try{
+				driver.get().findElement(locator).click();
+				staleElement = false;
+			} catch(org.openqa.selenium.StaleElementReferenceException e){
+				staleElement = true;
+			}
+
+		}
+/*
+		try {driver.get().findElement(locator).click();} catch (org.openqa.selenium.StaleElementReferenceException ex) {
 			Thread.sleep(2000);
 			logger.info("Trying to click again");
-			element.click();}
+			driver.get().findElement(locator).click();;}*/
 	}
 }

@@ -23,9 +23,6 @@ public class Hooks {
 			envConfig=new PropertiesFile(path+"config//config.properties");
 		}
 		featureName = getFeatureFileNameFromScenarioId(scenario);
-		System.out.println(envConfig.getProperty(featureName+"URL"));
-		System.out.println("jobfunctionsURL");
-
 		manager.launchApplication(envConfig.getProperty(featureName+"URL"));
 		}
 	

@@ -407,8 +407,7 @@ formatter.match({
   "location": "CMICConsoleStepDefinitions.clickInsertInJobDetailWindow()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document\n  (Session info: chrome\u003d84.0.4147.135)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SIVAKUKA01\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 84.0.4147.135, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\\Users\\sivakuka\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:3715}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: bce5bc235b1a7be33b2dd4da0a12919e\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)\r\n\tat org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:156)\r\n\tat sun.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy20.isEnabled(Unknown Source)\r\n\tat com.pragra.framework.utilities.DriverWait.isElementEnabled(DriverWait.java:55)\r\n\tat com.pragra.pages.CMICConsolePage.clickInsertInJobDetailWindow(CMICConsolePage.java:184)\r\n\tat com.pragra.stepdefinitions.CMICConsoleStepDefinitions.clickInsertInJobDetailWindow(CMICConsoleStepDefinitions.java:34)\r\n\tat ✽.Click Insert in job detail window(file:src/test/resources/features/jobfunctions.feature:10)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "Enter Job Code \"CAP1032\" , \"CAP1032\" and \"00\"",
@@ -418,7 +417,7 @@ formatter.match({
   "location": "CMICConsoleStepDefinitions.enterJobCodeAnd(String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Select Customer \"ANT\"",
@@ -428,7 +427,7 @@ formatter.match({
   "location": "CMICConsoleStepDefinitions.selectCustomer(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click Job Billing and select Job Map Code \"VMO\"",
@@ -438,7 +437,7 @@ formatter.match({
   "location": "CMICConsoleStepDefinitions.clickJobBillingAndSelectJobMapCode(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click Bank and insert Bank Department \"00\" and Bank Account \"1000\"",
@@ -448,7 +447,7 @@ formatter.match({
   "location": "CMICConsoleStepDefinitions.clickBankAndInsertBankDepartmentAndBankAccount(String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click Security and insert Group Code \"MASTER\"",
@@ -458,7 +457,7 @@ formatter.match({
   "location": "CMICConsoleStepDefinitions.clickSecurityAndInsertGroupCode(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Click Job Details and Save job",
@@ -468,7 +467,7 @@ formatter.match({
   "location": "CMICConsoleStepDefinitions.clickJobDetailsAndSaveJob()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "Search job \"CAP1032\" and verify row is returned",
@@ -478,7 +477,7 @@ formatter.match({
   "location": "CMICConsoleStepDefinitions.searchJobAndVerifyRowIsReturned(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.after({
   "status": "passed"

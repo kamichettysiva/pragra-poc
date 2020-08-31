@@ -5,16 +5,16 @@
       {
         "name": "User is on Login Page",
         "aggregatedDurations": {
-          "median": 0.005774800,
-          "average": 0.005774800
+          "median": 0.006215750,
+          "average": 0.006215750
         },
         "durations": [
           {
-            "duration": 0.0111951,
+            "duration": 0.0121278,
             "location": "file:src/test/resources/features/dashboardbuilder.feature:4"
           },
           {
-            "duration": 0.0003545,
+            "duration": 0.0003037,
             "location": "file:src/test/resources/features/jobfunctions.feature:4"
           }
         ]
@@ -27,16 +27,16 @@
       {
         "name": "Sign in with \"CMICCLOUD\", \"USERTEST\", \"testhikuu01\"",
         "aggregatedDurations": {
-          "median": 7.504798000,
-          "average": 7.504798000
+          "median": 7.012082550,
+          "average": 7.012082550
         },
         "durations": [
           {
-            "duration": 7.6374787,
+            "duration": 8.2703959,
             "location": "file:src/test/resources/features/dashboardbuilder.feature:5"
           },
           {
-            "duration": 7.3721173,
+            "duration": 5.7537692,
             "location": "file:src/test/resources/features/jobfunctions.feature:5"
           }
         ]
@@ -49,12 +49,12 @@
       {
         "name": "Verify dashboard page is launched",
         "aggregatedDurations": {
-          "median": 5.467195,
-          "average": 5.467195000
+          "median": 6.2241676,
+          "average": 6.224167600
         },
         "durations": [
           {
-            "duration": 5.467195,
+            "duration": 6.2241676,
             "location": "file:src/test/resources/features/dashboardbuilder.feature:6"
           }
         ]
@@ -67,12 +67,12 @@
       {
         "name": "Navigate to File-\u003eNew",
         "aggregatedDurations": {
-          "median": 3.7775234,
-          "average": 3.777523400
+          "median": 3.5269929,
+          "average": 3.526992900
         },
         "durations": [
           {
-            "duration": 3.7775234,
+            "duration": 3.5269929,
             "location": "file:src/test/resources/features/dashboardbuilder.feature:7"
           }
         ]
@@ -85,12 +85,12 @@
       {
         "name": "Enter dashboard name \"OATS14\" and select \"CMIC Default Data Source\"",
         "aggregatedDurations": {
-          "median": 9.3685489,
-          "average": 9.368548900
+          "median": 10.4328233,
+          "average": 10.432823300
         },
         "durations": [
           {
-            "duration": 9.3685489,
+            "duration": 10.4328233,
             "location": "file:src/test/resources/features/dashboardbuilder.feature:8"
           }
         ]
@@ -103,12 +103,12 @@
       {
         "name": "Verify new dashboard builder page is launched",
         "aggregatedDurations": {
-          "median": 2.1050226,
-          "average": 2.105022600
+          "median": 1.9470137,
+          "average": 1.947013700
         },
         "durations": [
           {
-            "duration": 2.1050226,
+            "duration": 1.9470137,
             "location": "file:src/test/resources/features/dashboardbuilder.feature:9"
           }
         ]
@@ -121,12 +121,12 @@
       {
         "name": "Select visualization type \"Table\"",
         "aggregatedDurations": {
-          "median": 0.0874534,
-          "average": 0.087453400
+          "median": 0.0958063,
+          "average": 0.095806300
         },
         "durations": [
           {
-            "duration": 0.0874534,
+            "duration": 0.0958063,
             "location": "file:src/test/resources/features/dashboardbuilder.feature:10"
           }
         ]
@@ -139,12 +139,12 @@
       {
         "name": "Select business area \"Job Costing\" and fields \"Company Code, Job Code, Job, Bill Amt\"",
         "aggregatedDurations": {
-          "median": 17.3829364,
-          "average": 17.382936400
+          "median": 17.1131337,
+          "average": 17.113133700
         },
         "durations": [
           {
-            "duration": 17.3829364,
+            "duration": 17.1131337,
             "location": "file:src/test/resources/features/dashboardbuilder.feature:11"
           }
         ]
@@ -157,12 +157,12 @@
       {
         "name": "Drag the selected \"Company Code, Job Code, Job, Bill Amt\" to columns",
         "aggregatedDurations": {
-          "median": 11.8129807,
-          "average": 11.812980700
+          "median": 11.5315354,
+          "average": 11.531535400
         },
         "durations": [
           {
-            "duration": 11.8129807,
+            "duration": 11.5315354,
             "location": "file:src/test/resources/features/dashboardbuilder.feature:12"
           }
         ]
@@ -175,12 +175,12 @@
       {
         "name": "Save the dashboard with \"SECURITY\"",
         "aggregatedDurations": {
-          "median": 8.7688407,
-          "average": 8.768840700
+          "median": 7.4334645,
+          "average": 7.433464500
         },
         "durations": [
           {
-            "duration": 8.7688407,
+            "duration": 7.4334645,
             "location": "file:src/test/resources/features/dashboardbuilder.feature:13"
           }
         ]
@@ -193,12 +193,12 @@
       {
         "name": "Verify dashboard \"OATS14\" by opening",
         "aggregatedDurations": {
-          "median": 12.7537836,
-          "average": 12.753783600
+          "median": 9.1597513,
+          "average": 9.159751300
         },
         "durations": [
           {
-            "duration": 12.7537836,
+            "duration": 9.1597513,
             "location": "file:src/test/resources/features/dashboardbuilder.feature:14"
           }
         ]
@@ -211,12 +211,12 @@
       {
         "name": "Verify CMIC landing page loaded succefully",
         "aggregatedDurations": {
-          "median": 0.0470532,
-          "average": 0.047053200
+          "median": 0.0500297,
+          "average": 0.050029700
         },
         "durations": [
           {
-            "duration": 0.0470532,
+            "duration": 0.0500297,
             "location": "file:src/test/resources/features/jobfunctions.feature:6"
           }
         ]
@@ -229,12 +229,12 @@
       {
         "name": "Click on CMIC ENTERPRISE",
         "aggregatedDurations": {
-          "median": 0.1060229,
-          "average": 0.106022900
+          "median": 0.1049479,
+          "average": 0.104947900
         },
         "durations": [
           {
-            "duration": 0.1060229,
+            "duration": 0.1049479,
             "location": "file:src/test/resources/features/jobfunctions.feature:7"
           }
         ]
@@ -247,12 +247,12 @@
       {
         "name": "Verify CMIC main console is launched",
         "aggregatedDurations": {
-          "median": 34.2366774,
-          "average": 34.236677400
+          "median": 34.9209227,
+          "average": 34.920922700
         },
         "durations": [
           {
-            "duration": 34.2366774,
+            "duration": 34.9209227,
             "location": "file:src/test/resources/features/jobfunctions.feature:8"
           }
         ]
@@ -265,13 +265,157 @@
       {
         "name": "Navigate to Job Costing-\u003eJob-\u003eEnter Job",
         "aggregatedDurations": {
-          "median": 22.2046643,
-          "average": 22.204664300
+          "median": 10.2022565,
+          "average": 10.202256500
         },
         "durations": [
           {
-            "duration": 22.2046643,
+            "duration": 10.2022565,
             "location": "file:src/test/resources/features/jobfunctions.feature:9"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click Insert in job detail window",
+    "steps": [
+      {
+        "name": "Click Insert in job detail window",
+        "aggregatedDurations": {
+          "median": 4.503232,
+          "average": 4.503232000
+        },
+        "durations": [
+          {
+            "duration": 4.503232,
+            "location": "file:src/test/resources/features/jobfunctions.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Enter Job Code {string} , {string} and {string}",
+    "steps": [
+      {
+        "name": "Enter Job Code \"CAP1032\" , \"CAP1032\" and \"00\"",
+        "aggregatedDurations": {
+          "median": 3.2445065,
+          "average": 3.244506500
+        },
+        "durations": [
+          {
+            "duration": 3.2445065,
+            "location": "file:src/test/resources/features/jobfunctions.feature:11"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Select Customer {string}",
+    "steps": [
+      {
+        "name": "Select Customer \"ANT\"",
+        "aggregatedDurations": {
+          "median": 9.0580891,
+          "average": 9.058089100
+        },
+        "durations": [
+          {
+            "duration": 9.0580891,
+            "location": "file:src/test/resources/features/jobfunctions.feature:12"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click Job Billing and select Job Map Code {string}",
+    "steps": [
+      {
+        "name": "Click Job Billing and select Job Map Code \"VMO\"",
+        "aggregatedDurations": {
+          "median": 7.7094974,
+          "average": 7.709497400
+        },
+        "durations": [
+          {
+            "duration": 7.7094974,
+            "location": "file:src/test/resources/features/jobfunctions.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click Bank and insert Bank Department {string} and Bank Account {string}",
+    "steps": [
+      {
+        "name": "Click Bank and insert Bank Department \"00\" and Bank Account \"1000\"",
+        "aggregatedDurations": {
+          "median": 6.6068499,
+          "average": 6.606849900
+        },
+        "durations": [
+          {
+            "duration": 6.6068499,
+            "location": "file:src/test/resources/features/jobfunctions.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click Security and insert Group Code {string}",
+    "steps": [
+      {
+        "name": "Click Security and insert Group Code \"MASTER\"",
+        "aggregatedDurations": {
+          "median": 8.9708479,
+          "average": 8.970847900
+        },
+        "durations": [
+          {
+            "duration": 8.9708479,
+            "location": "file:src/test/resources/features/jobfunctions.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Click Job Details and Save job",
+    "steps": [
+      {
+        "name": "Click Job Details and Save job",
+        "aggregatedDurations": {
+          "median": 9.1369576,
+          "average": 9.136957600
+        },
+        "durations": [
+          {
+            "duration": 9.1369576,
+            "location": "file:src/test/resources/features/jobfunctions.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "Search job {string} and verify row is returned",
+    "steps": [
+      {
+        "name": "Search job \"CAP1032\" and verify row is returned",
+        "aggregatedDurations": {
+          "median": 8.2791665,
+          "average": 8.279166500
+        },
+        "durations": [
+          {
+            "duration": 8.2791665,
+            "location": "file:src/test/resources/features/jobfunctions.feature:17"
           }
         ]
       }

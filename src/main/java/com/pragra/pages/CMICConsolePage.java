@@ -179,6 +179,7 @@ public class CMICConsolePage extends BasePage {
 	public void clickInsertInJobDetailWindow() throws InterruptedException {
 		DriverWait.isElementDisplayed(insertButton, WaitTime.ONEMINUTE);
 		DriverWait.isElementEnabled(insertButton, WaitTime.ONEMINUTE);
+		jobDetailMenu.click();
 		Thread.sleep(2000);
 		insertButton.click();
 		DriverWait.isElementEnabled(jobCode, WaitTime.ONEMINUTE);

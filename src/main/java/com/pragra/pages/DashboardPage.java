@@ -200,6 +200,7 @@ public class DashboardPage extends BasePage {
 		fileMenu.click();;
 		file_Open.click();
 		DriverWait.isElementDisplayed(searchAndOpenDashboardPopup, WaitTime.ONEMINUTE);
+		logger.info("Search dashboard popup displayed");
 		inputText(searchAndOpenDashboardNametxt, dashboardname+randomNumber, "Dashboard Name");
 		searchAndOpenDashboardSearchBtn.click();
 		DriverWait.isElementDisplayed(By.xpath("//div[text()='Search and Open Dashboard']/ancestor::table//span[text()='"+dashboardname+randomNumber+"']"),WaitTime.ONEMINUTE);

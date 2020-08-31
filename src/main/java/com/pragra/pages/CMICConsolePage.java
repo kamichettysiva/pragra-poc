@@ -251,6 +251,7 @@ public class CMICConsolePage extends BasePage {
 	}
 
 	public  void clickJobDetailsAndSaveJob() throws InterruptedException {
+		Thread.sleep(2000);
 		jobDetailMenu.click();
 		Thread.sleep(2000);
 		saveButton.click();

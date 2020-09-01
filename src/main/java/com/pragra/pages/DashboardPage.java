@@ -192,8 +192,8 @@ public class DashboardPage extends BasePage {
 		DriverWait.isElementDisplayed(assignUserRolePopup, WaitTime.ONEMINUTE);
 		userRoleSecurity.click();
 		Thread.sleep(2000);
-		logger.info("Saved Dashboard" );
 		assignUserRolePopupSaveBtn.click();
+		logger.info("Saved Dashboard" );
 		Thread.sleep(2000);
 	}
 
@@ -202,6 +202,7 @@ public class DashboardPage extends BasePage {
 		file_Open.click();
 		DriverWait.isElementDisplayed(searchAndOpenDashboardPopup, WaitTime.ONEMINUTE);
 		logger.info("Search dashboard popup displayed");
+		DriverWait.isElementEnabled(searchAndOpenDashboardNametxt, WaitTime.ONEMINUTE);
 		inputText(searchAndOpenDashboardNametxt, dashboardname+randomNumber, "Dashboard Name");
 		searchAndOpenDashboardSearchBtn.click();
 		DriverWait.isElementDisplayed(By.xpath("//div[text()='Search and Open Dashboard']/ancestor::table//span[text()='"+dashboardname+randomNumber+"']"),WaitTime.ONEMINUTE);

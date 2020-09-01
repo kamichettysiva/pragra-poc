@@ -256,7 +256,7 @@ public class CMICConsolePage extends BasePage {
 		jobDetailMenu.click();
 		Thread.sleep(2000);
 		saveButton.click();
-		Thread.sleep(5000);
+		Thread.sleep(7000);
 		logger.info("Saved Job");
 	}
 

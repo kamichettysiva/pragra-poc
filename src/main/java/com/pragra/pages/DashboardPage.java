@@ -138,7 +138,7 @@ public class DashboardPage extends BasePage {
 		inputText(newDashboardName, dashboardName+randomNumber, "Dashboard Name");
 		logger.info("Entered Dashboard Name");
 		Thread.sleep(2000);
-		DriverWait.isElementEnabled(dataSourceSearchIcon, WaitTime.ONEMINUTE);
+		DriverWait.isElementDisplayed(dataSourceSearchIcon, WaitTime.ONEMINUTE);
 		dataSourceSearchIcon.click();
 		DriverWait.isElementDisplayed(dataSourceSelectionPopup, WaitTime.ONEMINUTE);
 		inputText(dataSourceSearchNameTxt, datasource, "Datasource Name");
@@ -194,7 +194,7 @@ public class DashboardPage extends BasePage {
 		Thread.sleep(2000);
 		assignUserRolePopupSaveBtn.click();
 		logger.info("Saved Dashboard" );
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	}
 
 	public void verifyDashboardByOpening(String dashboardname) throws InterruptedException {

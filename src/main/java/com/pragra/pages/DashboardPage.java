@@ -138,6 +138,7 @@ public class DashboardPage extends BasePage {
 		inputText(newDashboardName, dashboardName+randomNumber, "Dashboard Name");
 		logger.info("Entered Dashboard Name");
 		Thread.sleep(2000);
+		DriverWait.isElementEnabled(dataSourceSearchIcon, WaitTime.ONEMINUTE);
 		dataSourceSearchIcon.click();
 		DriverWait.isElementDisplayed(dataSourceSelectionPopup, WaitTime.ONEMINUTE);
 		inputText(dataSourceSearchNameTxt, datasource, "Datasource Name");

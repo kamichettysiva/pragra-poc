@@ -180,8 +180,8 @@ public class CMICConsolePage extends BasePage {
 		DriverWait.isElementDisplayed(insertButton, WaitTime.ONEMINUTE);
 		DriverWait.isElementEnabled(insertButton, WaitTime.ONEMINUTE);
 		jobDetailMenu.click();
-		Thread.sleep(2000);
-		insertButton.click();
+		Thread.sleep(3000);
+		StaleElementHandleClick(insertButton);
 		DriverWait.isElementEnabled(jobCode, WaitTime.ONEMINUTE);
 		logger.info("New Job Setup Window is launched");
 	}
@@ -275,22 +275,24 @@ public class CMICConsolePage extends BasePage {
 	}
 
 
-	public void staleElementClick(By locator) throws InterruptedException {
-
-		boolean staleElement = true;
-		while(staleElement){
-			try{
-				driver.get().findElement(locator).click();
-				staleElement = false;
-			} catch(org.openqa.selenium.StaleElementReferenceException e){
-				staleElement = true;
+	public void StaleElementHandleClick (WebElement element)
+	{
+		int count = 0;
+		boolean clicked = false;
+		while (count < 4 && !clicked)
+		{
+			try
+			{
+				logger.info("Trying to recover from a stale element :" );
+				element.click();
+				clicked = true;
 			}
-
+			catch (StaleElementReferenceException e)
+			{
+				e.toString();
+				logger.info("Trying to recover from a stale element :" + e.getMessage());
+				count = count+1;
+			}
 		}
-/*
-		try {driver.get().findElement(locator).click();} catch (org.openqa.selenium.StaleElementReferenceException ex) {
-			Thread.sleep(2000);
-			logger.info("Trying to click again");
-			driver.get().findElement(locator).click();;}*/
 	}
 }

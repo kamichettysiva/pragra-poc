@@ -1,7 +1,0 @@
-com\pragra\stepdefinitions\LoginStepDefinitions.class
-com\pragra\stepdefinitions\DashboardStepDefinitions.class
-com\pragra\runner\SuiteRunner.class
-com\pragra\stepdefinitions\Hooks.class
-com\pragra\stepdefinitions\CMICConsoleStepDefinitions.class
-com\pragra\stepdefinitions\LandingPageStepDefinitions.class
-com\pragra\stepdefinitions\CMICFieldConsoleStepDefinitions.class

@@ -79,6 +79,20 @@ public class DriverWait {
 		return false;
 	}
 
+	public static boolean isElementEnabled(By locator, WaitTime waitTime) {
+		long before = System.currentTimeMillis();
+		long after = 0;
+		do {
+			try {
+				if (DriverManager.getDriver().findElement(locator).isEnabled() == true){
+					return true;				 }
+			} catch (NoSuchElementException noSuch) {
+				after = System.currentTimeMillis();
+			}
+		} while (((after - before) / 1000) <= waitTime.getTime());
+		return false;
+	}
+
 	/**
 	 * Make thread to sleep for specified time
 	 * 

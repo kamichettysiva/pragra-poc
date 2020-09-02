@@ -125,7 +125,7 @@ public class DashboardPage extends BasePage {
 	}
 
 	public void navigateFile_New() {
-		DriverWait.isElementDisplayed(fileMenu, WaitTime.ONEMINUTE);
+		DriverWait.isElementDisplayed(fileMenu, WaitTime.TWOMINUTES);
 		fileMenu.click();
 		logger.info("Clicked on File");
 		DriverWait.isElementDisplayed(file_New, WaitTime.ONEMINUTE);

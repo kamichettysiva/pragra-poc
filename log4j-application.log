@@ -573,3 +573,66 @@ Session ID: 815f3eb79258176e72097d832fa2dd1f
 [main] INFO  com.pragra.pages.CMICConsolePage  - Entered Security Group
 [main] INFO  com.pragra.pages.CMICConsolePage  - Saved Job
 [main] INFO  com.pragra.pages.CMICConsolePage  - Searched job and results verified
+[main] INFO  com.pragra.pages.LoginPage  - Entered Client ID
+[main] INFO  com.pragra.pages.LoginPage  - Entered User Name
+[main] INFO  com.pragra.pages.LoginPage  - Entered Password
+[main] INFO  com.pragra.pages.LoginPage  - Clicked SignIn Button
+[main] INFO  com.pragra.pages.CMICConsolePage  - CMIC Landing Page Displayed
+[main] INFO  com.pragra.pages.CMICConsolePage  - Clicked on CMIC Enterprise
+[main] INFO  com.pragra.pages.CMICConsolePage  - Switched toUIConsole - Financials Console tab
+[main] INFO  com.pragra.pages.CMICConsolePage  - Navigated to Job Setup Window
+[main] INFO  com.pragra.pages.CMICConsolePage  - Clicked Insert button in Job Detail pane
+[main] INFO  com.pragra.pages.CMICConsolePage  - New Job Setup Window is launched
+[main] INFO  com.pragra.pages.CMICConsolePage  - Entered Job Code and Job Name
+[main] INFO  com.pragra.pages.CMICConsolePage  - Selected Customer Code
+[main] INFO  com.pragra.pages.CMICConsolePage  - Selected Job Map Code
+[main] INFO  com.pragra.pages.CMICConsolePage  - Entered Bank Details
+[main] INFO  com.pragra.pages.CMICConsolePage  - Entered Security Group
+[main] INFO  com.pragra.pages.CMICConsolePage  - Clicked Job Detail Menu
+[main] INFO  com.pragra.pages.CMICConsolePage  - Saved Job
+[main] INFO  com.pragra.pages.CMICConsolePage  - Searched job and results verified
+[main] INFO  com.pragra.pages.LoginPage  - Entered Client ID
+[main] INFO  com.pragra.pages.LoginPage  - Entered User Name
+[main] INFO  com.pragra.pages.LoginPage  - Entered Password
+[main] INFO  com.pragra.pages.LoginPage  - Clicked SignIn Button
+[main] INFO  com.pragra.pages.CMICConsolePage  - CMIC Landing Page Displayed
+[main] INFO  com.pragra.pages.CMICConsolePage  - Clicked on CMIC Enterprise
+[main] INFO  com.pragra.pages.CMICConsolePage  - Switched toUIConsole - Financials Console tab
+[main] INFO  com.pragra.pages.CMICConsolePage  - Navigated to Job Setup Window
+[main] INFO  com.pragra.pages.CMICConsolePage  - Clicked Insert button in Job Detail pane
+[main] INFO  com.pragra.pages.LoginPage  - Entered Client ID
+[main] INFO  com.pragra.pages.LoginPage  - Entered User Name
+[main] INFO  com.pragra.pages.LoginPage  - Entered Password
+[main] INFO  com.pragra.pages.LoginPage  - Clicked SignIn Button
+[main] INFO  com.pragra.pages.CMICConsolePage  - CMIC Landing Page Displayed
+[main] INFO  com.pragra.pages.CMICConsolePage  - Clicked on CMIC Enterprise
+[main] INFO  com.pragra.pages.CMICConsolePage  - Switched toUIConsole - Financials Console tab
+[main] INFO  com.pragra.pages.CMICConsolePage  - Navigated to Job Setup Window
+[main] INFO  com.pragra.pages.CMICConsolePage  - Clicked Insert button in Job Detail pane
+[main] INFO  com.pragra.pages.CMICConsolePage  - New Job Setup Window is launched
+[main] INFO  com.pragra.pages.CMICConsolePage  - Entered Job Code and Job Name
+[main] INFO  com.pragra.pages.CMICConsolePage  - Selected Customer Code
+[main] INFO  com.pragra.pages.CMICConsolePage  - Selected Job Map Code
+[main] INFO  com.pragra.pages.CMICConsolePage  - Entered Bank Details
+[main] INFO  com.pragra.pages.CMICConsolePage  - Entered Security Group
+[main] INFO  com.pragra.pages.CMICConsolePage  - Clicked Job Detail Menu
+[main] INFO  com.pragra.pages.CMICConsolePage  - Saved Job
+[main] INFO  com.pragra.pages.CMICConsolePage  - Searched job and results verified
+[main] INFO  com.pragra.pages.LoginPage  - Entered Client ID
+[main] INFO  com.pragra.pages.LoginPage  - Entered User Name
+[main] INFO  com.pragra.pages.LoginPage  - Entered Password
+[main] INFO  com.pragra.pages.LoginPage  - Clicked SignIn Button
+[main] INFO  com.pragra.pages.CMICConsolePage  - CMIC Landing Page Displayed
+[main] INFO  com.pragra.pages.CMICConsolePage  - Clicked on CMIC Enterprise
+[main] INFO  com.pragra.pages.CMICConsolePage  - Switched toUIConsole - Financials Console tab
+[main] INFO  com.pragra.pages.CMICConsolePage  - Navigated to Job Setup Window
+[main] INFO  com.pragra.pages.CMICConsolePage  - Clicked Insert button in Job Detail pane
+[main] INFO  com.pragra.pages.CMICConsolePage  - New Job Setup Window is launched
+[main] INFO  com.pragra.pages.CMICConsolePage  - Entered Job Code and Job Name
+[main] INFO  com.pragra.pages.CMICConsolePage  - Selected Customer Code
+[main] INFO  com.pragra.pages.CMICConsolePage  - Selected Job Map Code
+[main] INFO  com.pragra.pages.CMICConsolePage  - Entered Bank Details
+[main] INFO  com.pragra.pages.CMICConsolePage  - Entered Security Group
+[main] INFO  com.pragra.pages.CMICConsolePage  - Clicked Job Detail Menu
+[main] INFO  com.pragra.pages.CMICConsolePage  - Saved Job
+[main] INFO  com.pragra.pages.CMICConsolePage  - Searched job and results verified

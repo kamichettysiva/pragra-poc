@@ -177,7 +177,6 @@ public class CMICConsolePage extends BasePage {
 	public void clickInsertInJobDetailWindow() throws InterruptedException {
 		DriverWait.isElementDisplayed(By.xpath("//div[@title='Insert Record']"), WaitTime.ONEMINUTE);
 		DriverWait.isElementEnabled(By.xpath("//div[@title='Insert Record']"), WaitTime.ONEMINUTE);
-		Thread.sleep(5000);
 		//StaleElementHandleClick("//div[@title='Insert Record']");
 		new WebDriverWait(driver.get(), 60)
 				.ignoring(StaleElementReferenceException.class)
@@ -186,12 +185,12 @@ public class CMICConsolePage extends BasePage {
 					return true;
 				});
 		logger.info("Clicked Insert button in Job Detail pane");
+		Thread.sleep(3000);
 		DriverWait.isElementEnabled(jobCode, WaitTime.ONEMINUTE);
 		logger.info("New Job Setup Window is launched");
 	}
 
 	public void enterJobCodeAndName(String jobcode, String jobname, String department) throws InterruptedException {
-		Thread.sleep(3000);
 		inputText(jobCode, jobcode+randomNumber, "Job Code");
 		inputText(jobName, jobname+randomNumber, "Job Name");
 		inputText(Department, department, "Department");
@@ -281,8 +280,7 @@ public class CMICConsolePage extends BasePage {
 	}
 
 
-	public void StaleElementHandleClick (String xpath)
-	{
+	public void StaleElementHandleClick (String xpath){
 		int count = 0;
 		boolean clicked = false;
 		while (count < 4 && !clicked)

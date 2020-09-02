@@ -177,13 +177,11 @@ public class CMICConsolePage extends BasePage {
 	}
 
 	public void clickInsertInJobDetailWindow() throws InterruptedException {
-		logger.info("1..");
 		DriverWait.isElementDisplayed(By.xpath("//div[@title='Insert Record']"), WaitTime.ONEMINUTE);
-		logger.info("2..");
 		DriverWait.isElementEnabled(By.xpath("//div[@title='Insert Record']"), WaitTime.ONEMINUTE);
-		logger.info("3..");
 		Thread.sleep(5000);
 		StaleElementHandleClick("//div[@title='Insert Record']");
+		logger.info("Clicked Insert button in Job Detail pane");
 		DriverWait.isElementEnabled(jobCode, WaitTime.ONEMINUTE);
 		logger.info("New Job Setup Window is launched");
 	}

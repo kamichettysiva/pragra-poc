@@ -3,11 +3,9 @@ package com.pragra.pages;
 import com.pragra.framework.utilities.DriverWait;
 import com.pragra.framework.utilities.DriverWait.WaitTime;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.StaleElementReferenceException;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.util.ArrayList;
@@ -180,7 +178,13 @@ public class CMICConsolePage extends BasePage {
 		DriverWait.isElementDisplayed(By.xpath("//div[@title='Insert Record']"), WaitTime.ONEMINUTE);
 		DriverWait.isElementEnabled(By.xpath("//div[@title='Insert Record']"), WaitTime.ONEMINUTE);
 		Thread.sleep(5000);
-		StaleElementHandleClick("//div[@title='Insert Record']");
+		//StaleElementHandleClick("//div[@title='Insert Record']");
+		new WebDriverWait(driver.get(), 60)
+				.ignoring(StaleElementReferenceException.class)
+				.until((WebDriver d) -> {
+					d.findElement(By.xpath("//div[@title='Insert Record']")).click();
+					return true;
+				});
 		logger.info("Clicked Insert button in Job Detail pane");
 		DriverWait.isElementEnabled(jobCode, WaitTime.ONEMINUTE);
 		logger.info("New Job Setup Window is launched");
@@ -296,4 +300,5 @@ public class CMICConsolePage extends BasePage {
 			}
 		}
 	}
+
 }

@@ -181,7 +181,7 @@ public class CMICConsolePage extends BasePage {
 		DriverWait.isElementEnabled(insertButton, WaitTime.ONEMINUTE);
 		jobDetailMenu.click();
 		Thread.sleep(3000);
-		StaleElementHandleClick(insertButton);
+		StaleElementHandleClick("//div[@title='Insert Record']");
 		DriverWait.isElementEnabled(jobCode, WaitTime.ONEMINUTE);
 		logger.info("New Job Setup Window is launched");
 	}
@@ -277,7 +277,7 @@ public class CMICConsolePage extends BasePage {
 	}
 
 
-	public void StaleElementHandleClick (WebElement element)
+	public void StaleElementHandleClick (String xpath)
 	{
 		int count = 0;
 		boolean clicked = false;
@@ -285,8 +285,7 @@ public class CMICConsolePage extends BasePage {
 		{
 			try
 			{
-				logger.info("Trying to recover from a stale element :" );
-				element.click();
+				driver.get().findElement(By.xpath(xpath)).click();
 				clicked = true;
 			}
 			catch (StaleElementReferenceException e)

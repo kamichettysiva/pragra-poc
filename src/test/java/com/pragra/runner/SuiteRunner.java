@@ -13,7 +13,6 @@ import io.cucumber.testng.CucumberOptions;
 		tags = "@BITest-Dashboard,@ADFTest-EnterJob",
 		plugin = {"html:reports/cucumber-reports/cucumber-pretty",
 				"json:reports/cucumber-reports/cucumber-html-report.json",
-				"json:reports/cucumber-reports/cucumber.json",
 				"usage:reports/cucumber-reports/cucumber-usage.json",
 				"rerun:reports/cucumber-reports/failedscenarios.txt" })
 

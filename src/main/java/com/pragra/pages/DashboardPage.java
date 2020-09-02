@@ -187,7 +187,8 @@ public class DashboardPage extends BasePage {
 
 	public void saveTheDashboardWith(String role) throws InterruptedException {
 		Thread.sleep(2000);
-		fileMenu.click();;
+		fileMenu.click();
+		Thread.sleep(1000);
 		file_Save.click();
 		DriverWait.isElementDisplayed(assignUserRolePopup, WaitTime.ONEMINUTE);
 		userRoleSecurity.click();
@@ -199,6 +200,7 @@ public class DashboardPage extends BasePage {
 
 	public void verifyDashboardByOpening(String dashboardname) throws InterruptedException {
 		fileMenu.click();;
+		Thread.sleep(1000);
 		file_Open.click();
 		DriverWait.isElementDisplayed(searchAndOpenDashboardPopup, WaitTime.ONEMINUTE);
 		logger.info("Search dashboard popup displayed");

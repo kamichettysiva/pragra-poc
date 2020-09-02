@@ -191,8 +191,10 @@ public class DashboardPage extends BasePage {
 		Thread.sleep(1000);
 		file_Save.click();
 		DriverWait.isElementDisplayed(assignUserRolePopup, WaitTime.ONEMINUTE);
+		logger.info("Assign role popup is displayed" );
+		Thread.sleep(1000);
 		userRoleSecurity.click();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		assignUserRolePopupSaveBtn.click();
 		logger.info("Saved Dashboard" );
 		Thread.sleep(3000);

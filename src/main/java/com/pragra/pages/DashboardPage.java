@@ -148,17 +148,20 @@ public class DashboardPage extends BasePage {
 		dataSourceSearchResult.click();
 		dataSourceOKBtn.click();
 		logger.info("Selected Data Source");
-		Thread.sleep(2000);
+		Thread.sleep(3000);
+		DriverWait.isElementEnabled(getNewDashboardPopupOKBtn, WaitTime.ONEMINUTE);
 		getNewDashboardPopupOKBtn.click();
 	}
 
 	public void verifyNewDashboardBuilderPageIsLaunched(){
 		DriverWait.isElementDisplayed(visualizationsContainer, WaitTime.ONEMINUTE);
+		logger.info("Dashboard builder page is launched");
 	}
 
 	public void selectVisualizationType(String visualizationtype){
-		DriverWait.isElementDisplayed(visualizationsContainer, WaitTime.ONEMINUTE);
+		DriverWait.isElementDisplayed(chartType, WaitTime.ONEMINUTE);
 		chartType.click();
+		logger.info("Selected visualization type");
 	}
 
 	public void  selectBusinessAreaAndFields(String busiessarea, String fields) throws InterruptedException {
@@ -169,22 +172,25 @@ public class DashboardPage extends BasePage {
 		businessAreaDropdown.selectByVisibleText(busiessarea);
 		expandBusinessArea.click();
 		String FieldsArray[] = fields.split(",");
+		Thread.sleep(3000);
 		for(int i = 0;i < FieldsArray.length; i++) {
-			Thread.sleep(2000);
 			action.doubleClick(driver.get().findElement(By.xpath("//span[text()='" + FieldsArray[i].trim()+ "']"))).perform();
+			Thread.sleep(3000);
 		}
 		fieldsSelectionOK.click();
+		logger.info("Selected business area fields");
 	}
 
 	public void dragTheSelectedToColumns(String fields) throws InterruptedException {
 		DriverWait.isElementDisplayed(expandJCjobs, WaitTime.ONEMINUTE);
 		expandJCjobs.click();
 		String FieldsArray[] = fields.split(",");
+		Thread.sleep(3000);
 		for(int i = 0;i < FieldsArray.length; i++) {
-			Thread.sleep(2000);
 			action.dragAndDrop(driver.get().findElement(By.xpath("//td[text()='" + FieldsArray[i].trim()+ "']")),driver.get().findElement(By.xpath("//div[text()='Drag data fields here']"))).perform();
-
+			Thread.sleep(3000);
 		}
+		logger.info("Dragged selected columns");
 	}
 
 	public void saveTheDashboardWith(String role) throws InterruptedException {

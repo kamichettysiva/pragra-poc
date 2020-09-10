@@ -20,3 +20,21 @@ Feature: Create New Job
       |clientid   |userid    |password     |jobcode  |jobname  |department  |customer  |jobmapcode  |bankdept  |bankact  |secgcode  |
       |CMICCLOUD  |USERTEST  |testhikuu01  |CAP1032  |CAP1032  |00          |ANT       |VMO         |00        |1000     |MASTER    |
 
+
+  @JSPTest-CreateTicket
+  Scenario Outline: Login and add new issue
+    Given User is on Login Page
+    When Sign in with "<clientid>", "<userid>", "<password>"
+    And Verify CMIC landing page loaded succefully
+    And Click on CMIC FIELD
+    And Verify CMIC FIELD main console is launched
+    And Search project "<projectname>"
+    And Navigate to Issues
+    And Click Add Issue
+    And Enter issue details "<subject>", "<type>", "<severity>","<description>"
+    And Assign issue "<assignee>" save and submit
+    Then Search and verify issue
+
+    Examples:
+      |clientid   |userid    |password     |projectname  |subject  |subject      |type          |severity     |assignee
+      |CMICCLOUD  |USERTEST  |testhikuu01  |OATSJOB      |CAP1029  |COPT TEST5   |Field Issue   |Test         |Andrew Hung

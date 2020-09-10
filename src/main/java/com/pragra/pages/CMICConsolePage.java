@@ -273,7 +273,7 @@ public class CMICConsolePage extends BasePage {
 		inputText(searchJobCodetxt, jobcode+randomNumber, "Job Code");
 		searchJobButton.click();
 		Thread.sleep(3000);
-		DriverWait.isElementDisplayed(jobSearchResult, WaitTime.ONEMINUTE);
+		DriverWait.isElementDisplayed(By.xpath("//span[text()='Query Returned 1 Row']"), WaitTime.ONEMINUTE);
 		logger.info("Searched job and results verified");
 
 

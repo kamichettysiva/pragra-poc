@@ -162,6 +162,7 @@ public class DashboardPage extends BasePage {
 	}
 
 	public void  selectBusinessAreaAndFields(String busiessarea, String fields) throws InterruptedException {
+		DriverWait.isElementDisplayed(feildsSelectionLabel, WaitTime.ONEMINUTE);
 		feildsSelectionLabel.click();
 		DriverWait.isElementDisplayed(fieldsSelectionPopup, WaitTime.ONEMINUTE);
 		Select businessAreaDropdown = new Select(businessAreaSelectionDropdown);

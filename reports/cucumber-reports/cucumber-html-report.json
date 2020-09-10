@@ -1,0 +1,521 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T03:31:00.274Z",
+        "before": [
+          {
+            "result": {
+              "duration": 13547671700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Login and setup and dashboard",
+        "description": "",
+        "id": "create-new-bi-dashboard;login-and-setup-and-dashboard;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 671476500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 22326600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Login Page",
+            "match": {
+              "location": "LoginStepDefinitions.userIsOnLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8983875700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Sign in with \"CMICCLOUD\", \"USERTEST\", \"testhikuu01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CMICCLOUD\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"USERTEST\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"testhikuu01\"",
+                  "offset": 38
+                }
+              ],
+              "location": "LoginStepDefinitions.signInWith(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5451756600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify dashboard page is launched",
+            "match": {
+              "location": "DashboardStepDefinitions.verifyDashboardPageIsLaunched()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4942713700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Navigate to File-\u003eNew",
+            "match": {
+              "location": "DashboardStepDefinitions.navigateToFileNew()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9287557300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Enter dashboard name \"OATS14\" and select \"CMIC Default Data Source\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OATS14\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"CMIC Default Data Source\"",
+                  "offset": 41
+                }
+              ],
+              "location": "DashboardStepDefinitions.enterDashboardNameAndSelect(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2013410000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Verify new dashboard builder page is launched",
+            "match": {
+              "location": "DashboardStepDefinitions.verifyNewDashboardBuilderPageIsLaunched()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 89105400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Select visualization type \"Table\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Table\"",
+                  "offset": 26
+                }
+              ],
+              "location": "DashboardStepDefinitions.selectVisualizationType(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 16529068300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Select business area \"Job Costing\" and fields \"Company Code, Job Code, Job, Bill Amt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Job Costing\"",
+                  "offset": 21
+                },
+                {
+                  "val": "\"Company Code, Job Code, Job, Bill Amt\"",
+                  "offset": 46
+                }
+              ],
+              "location": "DashboardStepDefinitions.selectBusinessAreaAndFields(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//td[text()\u003d\u0027Job Code\u0027]\"}\n  (Session info: chrome\u003d85.0.4183.102)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027SIVAKUKA01\u0027, ip: \u0027192.168.56.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_231\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 85.0.4183.102, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\\Users\\sivakuka\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:3126}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}\nSession ID: 30af3687db96f96576eca55fcb80d14c\n*** Element info: {Using\u003dxpath, value\u003d//td[text()\u003d\u0027Job Code\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.pragra.pages.DashboardPage.dragTheSelectedToColumns(DashboardPage.java:184)\r\n\tat com.pragra.stepdefinitions.DashboardStepDefinitions.dragTheSelectedToColumns(DashboardStepDefinitions.java:40)\r\n\tat ✽.Drag the selected \"Company Code, Job Code, Job, Bill Amt\" to columns(file:src/test/resources/features/dashboardbuilder.feature:12)\r\n",
+              "duration": 8087822100,
+              "status": "failed"
+            },
+            "line": 12,
+            "name": "Drag the selected \"Company Code, Job Code, Job, Bill Amt\" to columns",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Company Code, Job Code, Job, Bill Amt\"",
+                  "offset": 18
+                }
+              ],
+              "location": "DashboardStepDefinitions.dragTheSelectedToColumns(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5800,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "Save the dashboard with \"SECURITY\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"SECURITY\"",
+                  "offset": 24
+                }
+              ],
+              "location": "DashboardStepDefinitions.saveTheDashboardWith(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1700,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "Verify dashboard \"OATS14\" by opening",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"OATS14\"",
+                  "offset": 17
+                }
+              ],
+              "location": "DashboardStepDefinitions.verifyDashboardByOpening(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BITest-Dashboard"
+          }
+        ]
+      }
+    ],
+    "name": "Create new BI Dashboard",
+    "description": "",
+    "id": "create-new-bi-dashboard",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/dashboardbuilder.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-10T03:32:09.911Z",
+        "before": [
+          {
+            "result": {
+              "duration": 14642586700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Login and setup and new job",
+        "description": "",
+        "id": "create-new-job;login-and-setup-and-new-job;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 720060300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 401000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on Login Page",
+            "match": {
+              "location": "LoginStepDefinitions.userIsOnLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5788120100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Sign in with \"CMICCLOUD\", \"USERTEST\", \"testhikuu01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CMICCLOUD\"",
+                  "offset": 13
+                },
+                {
+                  "val": "\"USERTEST\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"testhikuu01\"",
+                  "offset": 38
+                }
+              ],
+              "location": "LoginStepDefinitions.signInWith(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 42446900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify CMIC landing page loaded succefully",
+            "match": {
+              "location": "CMICConsoleStepDefinitions.verifyCMICLandingPageLoadedSuccefully()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 106876400,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Click on CMIC ENTERPRISE",
+            "match": {
+              "location": "CMICConsoleStepDefinitions.clickOnCMICENTERPRISE()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39220777400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify CMIC main console is launched",
+            "match": {
+              "location": "CMICConsoleStepDefinitions.verifyCMICMainConsoleIsLaunched()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9494893300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Navigate to Job Costing-\u003eJob-\u003eEnter Job",
+            "match": {
+              "location": "CMICConsoleStepDefinitions.navigateToJobCostingJobEnterJob()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3163352900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click Insert in job detail window",
+            "match": {
+              "location": "CMICConsoleStepDefinitions.clickInsertInJobDetailWindow()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 256952100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Enter Job Code \"CAP1032\" , \"CAP1032\" and \"00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CAP1032\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"CAP1032\"",
+                  "offset": 27
+                },
+                {
+                  "val": "\"00\"",
+                  "offset": 41
+                }
+              ],
+              "location": "CMICConsoleStepDefinitions.enterJobCodeAnd(String,String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8565241500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Select Customer \"ANT\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ANT\"",
+                  "offset": 16
+                }
+              ],
+              "location": "CMICConsoleStepDefinitions.selectCustomer(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8070340700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Click Job Billing and select Job Map Code \"VMO\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"VMO\"",
+                  "offset": 42
+                }
+              ],
+              "location": "CMICConsoleStepDefinitions.clickJobBillingAndSelectJobMapCode(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6440959200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Click Bank and insert Bank Department \"00\" and Bank Account \"1000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"00\"",
+                  "offset": 38
+                },
+                {
+                  "val": "\"1000\"",
+                  "offset": 60
+                }
+              ],
+              "location": "CMICConsoleStepDefinitions.clickBankAndInsertBankDepartmentAndBankAccount(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9218818800,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Click Security and insert Group Code \"MASTER\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"MASTER\"",
+                  "offset": 37
+                }
+              ],
+              "location": "CMICConsoleStepDefinitions.clickSecurityAndInsertGroupCode(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11163160000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click Job Details and Save job",
+            "match": {
+              "location": "CMICConsoleStepDefinitions.clickJobDetailsAndSaveJob()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9498449500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Search job \"CAP1032\" and verify row is returned",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"CAP1032\"",
+                  "offset": 11
+                }
+              ],
+              "location": "CMICConsoleStepDefinitions.searchJobAndVerifyRowIsReturned(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ADFTest-EnterJob"
+          }
+        ]
+      }
+    ],
+    "name": "Create New Job",
+    "description": "",
+    "id": "create-new-job",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/jobfunctions.feature",
+    "tags": []
+  }
+]
